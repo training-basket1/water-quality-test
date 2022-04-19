@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Quality Test</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h1>Water Quality Test</h1>
+      <div class="form1">
+        <form action="/predict" method="POST">
+          <label for="">
+            <table>
+              <tr>
+                <td>pH value:</td>
+                <td>
+                  <input
+                    class="input1"
+                    type="text"
+                    name="ph"
+                    placeholder="pH value"
+                    required="required"
+                  />
+                </td>
+                <td>Hardness:</td>
+                <td>
+                  <input
+                    class="input2"
+                    type="text"
+                    name="Hardness"
+                    placeholder="Hardness"
+                    required="required"
+                  />
+                </td>
+                <td>Solids :</td>
+                <td>
+                  <input
+                    class="input3"
+                    type="text"
+                    name="Solids"
+                    placeholder="Solids"
+                    required="required"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Chloramines:</td>
+                <td>
+                  <input
+                    class="input1"
+                    type="text"
+                    name="Chloramines"
+                    placeholder="Chloramines"
+                    required="required"
+                  />
+                </td>
+                <td>Sulfate :</td>
+                <td>
+                  <input
+                    class="input2"
+                    type="text"
+                    name="Sulfate"
+                    placeholder="Sulfate"
+                    required="required"
+                  />
+                </td>
+                <td>Conductivity:</td>
+                <td>
+                  <input
+                    class="input3"
+                    type="text"
+                    name="Conductivity"
+                    placeholder="Conductivity"
+                    required="required"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Organic_carbon:</td>
+                <td>
+                  <input
+                    class="input1"
+                    type="text"
+                    name="Organic_carbon"
+                    placeholder="Organic_carbon"
+                    required="required"
+                  />
+                </td>
+                <td>Trihalomethanes:</td>
+                <td>
+                  <input
+                    class="input2"
+                    type="text"
+                    name="Trihalomethanes"
+                    placeholder="Trihalomethanes"
+                    required="required"
+                  />
+                </td>
+                <td>Turbidity:</td>
+                <td>
+                  <input
+                    class="input3"
+                    type="text"
+                    name="Turbidity"
+                    placeholder="Turbidity"
+                    required="required"
+                  />
+                </td>
+              </tr>
+            </table>
+          </label>
+          <br />
+          <button type="submit">Water quality Test</button>
+        </form>
+
+        <h2>{{ prediction_text }}</h2>
+      </div>
+    </div>
+  </body>
+</html>
